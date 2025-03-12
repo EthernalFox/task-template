@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="title">
+        <h1>Tasks Workflow Status</h1>
+        <span class="label">v1.0</span>
+      </section>
+      <section class="header">
+        <h4 id="backlog-header">Backlog</h4>
+        <h4 id="todo-header">To do</h4>
+        <h4 id="progress-header">In progress</h4>
+        <h4 id="review-header">In review</h4>
+        <h4 id="ready-header">Ready</h4>
+      </section>
+      <section class="drag-drop-container">
+        <section
+          class="col3"
+          id="backlog"
+          ondrop="drop(event)"
+          ondragover="allowdrop(event)"
+        >
+          <p class="task" id="task1" draggable="true" ondragstart="drag(event)">
+            Task 1
+          </p>
+          <p class="task" id="task2" draggable="true" ondragstart="drag(event)">
+            Task 2
+          </p>
+          <p class="task" id="task3" draggable="true" ondragstart="drag(event)">
+            Task 3
+          </p>
+          <p class="task" id="task4" draggable="true" ondragstart="drag(event)">
+            Task 4
+          </p>
+          <p class="task" id="task5" draggable="true" ondragstart="drag(event)">
+            Task 5
+          </p>
+        </section>
+        <section
+          class="col3"
+          id="in-progress"
+          ondrop="drop(event)"
+          ondragover="allowdrop(event)"
+        ></section>
+        <section
+          class="col3"
+          id="to-do"
+          ondrop="drop(event)"
+          ondragover="allowdrop(event)"
+        ></section>
+        <section
+          class="col3"
+          id="in-review"
+          ondrop="drop(event)"
+          ondragover="allowdrop(event)"
+        ></section>
+        <section
+          class="col3"
+          id="ready"
+          ondrop="drop(event)"
+          ondragover="allowdrop(event)"
+        ></section>
+      </section>
+    </main>
+  </body>
+</html>
